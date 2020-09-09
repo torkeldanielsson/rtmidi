@@ -2562,7 +2562,7 @@ void MidiInWinMM :: initialize( const std::string& /*clientName*/ )
   unsigned int nDevices = midiInGetNumDevs();
   if ( nDevices == 0 ) {
     errorString_ = "MidiInWinMM::initialize: no MIDI input devices currently available.";
-    error( RtMidiError::WARNING, errorString_ );
+    // error( RtMidiError::WARNING, errorString_ );
   }
 
   // Save our api-specific connection information.
