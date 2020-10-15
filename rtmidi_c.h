@@ -158,7 +158,7 @@ RTMIDIAPI unsigned int rtmidi_get_port_count (RtMidiPtr device);
 /*! \brief Return a string identifier for the specified MIDI input port number.
  * See RtMidi::getPortName().
  */
-RTMIDIAPI const char* rtmidi_get_port_name (RtMidiPtr device, unsigned int portNumber);
+RTMIDIAPI int rtmidi_get_port_name (RtMidiPtr device, unsigned int portNumber, char * bufOut, int * bufLen);
 
 /* RtMidiIn API */
 
